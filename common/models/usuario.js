@@ -16,6 +16,11 @@ module.exports = function(Usuario) {
     var estado = app.models.Estado;
     var estados = [];
     var id;
+    var response = {
+      'email': email,
+      'nombreComercial': nombreComercial,
+      'pais': pais,
+    };
     // eslint-disable-next-line
     Usuario.find({where: {usuario: email, clave: password }}, function(err, user) {
       if (user.length > 0) {
@@ -34,7 +39,7 @@ module.exports = function(Usuario) {
       if (!err) {
         estados.forEach(function(value) {
           if (value.id === py[0].estadoid) {
-            return cb(null, 'user logged');
+            return cb(null, response);
           }
         });
       }
