@@ -46,7 +46,9 @@
   },
   "Pyme": {
     "dataSource": "mySQL",
-    "public": true
+    "public": true,
+    "$promise": {},
+    "$resolved": true
   },
   "Redsocial": {
     "dataSource": "mySQL",

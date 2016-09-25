@@ -43,22 +43,6 @@
       },
       "_selectable": false
     },
-    "estadoid": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": 10,
-      "scale": 0,
-      "mysql": {
-        "columnName": "EstadoID",
-        "dataType": "int",
-        "dataLength": null,
-        "dataPrecision": 10,
-        "dataScale": 0,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
     "sectorid": {
       "type": "Number",
       "required": true,
@@ -122,38 +106,6 @@
         "nullable": "N"
       },
       "_selectable": false
-    },
-    "esactiva": {
-      "type": "Binary",
-      "required": true,
-      "length": null,
-      "precision": 1,
-      "scale": null,
-      "mysql": {
-        "columnName": "EsActiva",
-        "dataType": "bit",
-        "dataLength": null,
-        "dataPrecision": 1,
-        "dataScale": null,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
-    "esnegociofamiliar": {
-      "type": "Binary",
-      "required": false,
-      "length": null,
-      "precision": 1,
-      "scale": null,
-      "mysql": {
-        "columnName": "EsNegocioFamiliar",
-        "dataType": "bit",
-        "dataLength": null,
-        "dataPrecision": 1,
-        "dataScale": null,
-        "nullable": "Y"
-      },
-      "_selectable": true
     },
     "logo": {
       "type": "Binary",
@@ -219,22 +171,6 @@
       },
       "_selectable": false
     },
-    "esfacebookappinstalado": {
-      "type": "Binary",
-      "required": true,
-      "length": null,
-      "precision": 1,
-      "scale": null,
-      "mysql": {
-        "columnName": "EsFacebookAppInstalado",
-        "dataType": "bit",
-        "dataLength": null,
-        "dataPrecision": 1,
-        "dataScale": null,
-        "nullable": "N"
-      },
-      "_selectable": false
-    },
     "usuarioid": {
       "type": "Number",
       "required": true,
@@ -279,6 +215,70 @@
         "dataLength": 50,
         "dataPrecision": null,
         "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "esactiva": {
+      "type": "boolean",
+      "required": true,
+      "length": null,
+      "precision": 1,
+      "scale": null,
+      "mysql": {
+        "columnName": "EsActiva",
+        "dataType": "bit",
+        "dataLength": null,
+        "dataPrecision": 1,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "esfacebookappinstalado": {
+      "type": "boolean",
+      "required": true,
+      "length": null,
+      "precision": 1,
+      "scale": null,
+      "mysql": {
+        "columnName": "EsFacebookAppInstalado",
+        "dataType": "bit",
+        "dataLength": null,
+        "dataPrecision": 1,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "esnegociofamiliar": {
+      "type": "boolean",
+      "required": false,
+      "length": null,
+      "precision": 1,
+      "scale": null,
+      "mysql": {
+        "columnName": "EsNegocioFamiliar",
+        "dataType": "bit",
+        "dataLength": null,
+        "dataPrecision": 1,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "estadoid": {
+      "type": "number",
+      "required": true,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "EstadoID",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
         "nullable": "N"
       },
       "_selectable": false
