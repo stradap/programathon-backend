@@ -1,0 +1,71 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Estado": {
+    "dataSource": "mySQL",
+    "public": true
+  },
+  "Genero": {
+    "dataSource": "mySQL",
+    "public": true
+  },
+  "Pais": {
+    "dataSource": "mySQL",
+    "public": true
+  },
+  "Pyme": {
+    "dataSource": "mySQL",
+    "public": true
+  },
+  "Redsocial": {
+    "dataSource": "mySQL",
+    "public": true
+  },
+  "Respuesta": {
+    "dataSource": "mySQL",
+    "public": true
+  },
+  "Sector": {
+    "dataSource": "mySQL",
+    "public": true
+  },
+  "Tiporedsocial": {
+    "dataSource": "mySQL",
+    "public": true
+  },
+  "Usuario": {
+    "dataSource": "mySQL",
+    "public": true
+  }
+}

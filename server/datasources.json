@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mySQL": {
+    "host": "104.197.169.31",
+    "port": 3306,
+    "database": "programathon2016",
+    "password": "Progr416",
+    "name": "mySQL",
+    "user": "root",
+    "connector": "mysql"
+  }
+}
